@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+body{
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    perspective: 500px;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%);
+}
+.text{
+    font-size: 60px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.box{
+    width: 300px;
+    height: 100px;
+    background-color: aquamarine;
+    margin: 60px auto;
+    cursor: pointer;
+    border-radius: 25px;
+    background: url(/bd.jpg);
+    background-size: cover;
+}
+.text:hover, .box:hover{
+    animation: animate 1s linear;
+}
+@keyframes animate{
+    50%{
+        transform: rotateY(180deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
